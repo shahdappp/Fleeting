@@ -194,6 +194,10 @@
             opacity: 0;
             pointer-events: none;
             transition: opacity 0.5s ease;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: 0;
         }
 
         .email-form.fade-in {
@@ -355,7 +359,7 @@
             <!-- Main polaroid -->
             <div class="polaroid-wrapper">
                 <div class="image-container">
-                    <video autoplay muted loop>
+                    <video autoplay muted playsinline loop preload="metadata">
                         <source src="final landing page video.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -363,7 +367,7 @@
                         <h1 class="title title-1">Objects of Reminder</h1>
                         <h1 class="title title-2" style="opacity:0">Fleeting</h1>
                         <div class="button-container" style="opacity:0;">
-                            <button class="notify-button" id="notifyButton">Remind Me</button>
+                            <button class="notify-button" id="notifyButton">Early Access</button>
                             <form class="email-form" id="emailForm">
                                 <div class="email-input-container">
                                     <input 
